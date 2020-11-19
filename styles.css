@@ -38,6 +38,14 @@ p {
   color: #b5c9d3;
 }
 
+@media screen and (max-width: 600px){
+  h1{
+    font-size: 30px;
+    margin-top: -70px;
+  }
+  ;
+}
+
 /* ====================
 Navbar
 ==================== */
@@ -47,9 +55,14 @@ Navbar
   left: 0;
   width: 100%;
   background: #2F2F2F;
-  box-shadow: var(--dark-shadow);
   z-index: 2;
-  height: 50px;
+}
+.nav-header h3{
+  position: relative;
+  top: 10px;
+}
+.nav-icons {
+  display: none;
 }
 .nav-center {
   width: 100%;
@@ -60,7 +73,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
+  padding: 0 2rem;
 }
 .nav-toggle {
   background: transparent;
@@ -69,6 +82,8 @@ Navbar
   color: white;
   cursor: pointer;
   transition: all 0.3s linear;
+  position: relative;
+  top: 10px;
 }
 .nav-toggle:hover {
   transform: scale(1.2);
@@ -85,6 +100,7 @@ Navbar
 }
 .nav-link:hover {
   color: var(--clr-light-gray);
+  padding-left: 2.25rem;
 }
 /* 280px */
 .nav-links {
@@ -97,10 +113,7 @@ Navbar
 }
 @media screen and (min-width: 992px) {
   /* hide toggle button */
-  .navbar {
-    padding: 1rem 2rem;
-    height: 60px;
-  }
+
   .nav-toggle {
     display: none;
   }
@@ -114,12 +127,14 @@ Navbar
   .nav-links {
     height: auto;
     display: flex;
+    padding-top: 10px;
   }
   .nav-header {
     padding: 0 0;
   }
-  .nav-header{
-    margin-top: -10px
+  .nav-header h3{
+    position: relative;
+    top: 0;
   }
   .nav-link {
     padding: 0 0;
@@ -128,6 +143,7 @@ Navbar
   .nav-link:hover {
     padding: 0;
     color: var(--clr-light-gray);
+    background: transparent;
   }
 }
 
@@ -261,6 +277,23 @@ Project
 }
 .project-icon .icon:last-child {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px){
+  .project-card img {
+    width: 40%;
+    height: 40%;
+  }
+}
+  @media screen and (max-width: 1000px){
+    .project-card img {
+      margin: 0 auto;
+      width: 60%;
+      height: 60%;
+    }
+    .project-card {
+      flex-wrap: wrap;
+    }
 }
 
 /* ====================
