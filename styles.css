@@ -38,12 +38,19 @@ p {
   color: #b5c9d3;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   h1{
     font-size: 30px;
-    margin-top: -70px;
   }
-  ;
+  h3{
+    font-size: 24px;
+  }
+  p{
+    font-size: 0.75rem;
+  }
+  label{
+    font-size: 0.75rem;
+  }
 }
 
 /* ====================
@@ -54,7 +61,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  background: #2F2F2F;
+  background: #16191c;
   z-index: 2;
 }
 .nav-header h3{
@@ -199,7 +206,7 @@ Hero
 About Me
 ==================== */
 #about {
-  height: 100vh;
+  min-height: calc(100vh + 100px);
   background-color: #0a192f;
 }
 #about h1 {
@@ -207,7 +214,7 @@ About Me
 }
 .about-content {
   margin: 0 auto;
-  width: 500px;
+  max-width: 500px;
 }
 .about-content p {
   margin-top: 20px;
@@ -236,6 +243,22 @@ About Me
 }
 .about-skills-img img:hover {
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px){
+  #about h1 {
+    padding-top: 50px;
+  }
+  .about-skills-img img {
+    height: 70px;
+  } 
+  .about-skills-img span {
+    display: block;
+    
+  } 
+  .about-skills-img span:last-child {
+    margin-top: 20px;
+  } 
 }
 
 /* ====================
@@ -273,7 +296,7 @@ Project
 }
 .project-icon {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .project-icon .icon:last-child {
   margin-left: 20px;
@@ -283,6 +306,10 @@ Project
   .project-card img {
     width: 40%;
     height: 40%;
+    
+  }
+  .project-icon{
+    margin-top: 0;
   }
 }
   @media screen and (max-width: 1000px){
@@ -295,13 +322,26 @@ Project
       flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 700px){
+  #projects{
+    padding-bottom: 30px;
+  }
+  #projects h1 {
+    padding-top: 50px;
+  }
+  
+  .project-card{
+    margin-top: 10px;
+  }
+}
 
 /* ====================
 Contact
 ==================== */
 #contact {
-  height: 100vh;
+  height: (100vh + 100px);
   background-color: #0a192f;
+  padding-bottom: 20px;
 }
 #contact p {
   margin-bottom: 40px;
@@ -383,21 +423,40 @@ textarea {
   }
 }
 
+
+@media screen and (max-width: 991px){
+  .form-group {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px){
+  .form-group {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+  #contact h1 {
+    padding-top: 50px;
+    text-align: center;
+  }
+}
 /* ====================
 Footer
 ==================== */
 #footer{
-  background-color: #0a192f;
-  height: 110px;
+  /* background-color: #0a192f; */
+  background-color: #16191c;
+  height: 130px;
   text-align: center;
-  
 }
 .footer-icon .fab,
 .footer-icon .fas{
   font-size: 30px;
   margin-right: 20px;
   color: white;
-  margin-top: 20px
+  margin-top: 30px;
 }
 .copyright{
   margin-top:10px;
