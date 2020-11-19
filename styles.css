@@ -49,7 +49,7 @@ Navbar
   background: #2F2F2F;
   box-shadow: var(--dark-shadow);
   z-index: 2;
-  opacity: 0.7;
+  height: 50px;
 }
 .nav-center {
   width: 100%;
@@ -60,7 +60,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 .nav-toggle {
   background: transparent;
@@ -84,9 +84,7 @@ Navbar
   font-size: 1rem;
 }
 .nav-link:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
-  padding-left: 2.25rem;
+  color: var(--clr-light-gray);
 }
 /* 280px */
 .nav-links {
@@ -101,6 +99,7 @@ Navbar
   /* hide toggle button */
   .navbar {
     padding: 1rem 2rem;
+    height: 60px;
   }
   .nav-toggle {
     display: none;
@@ -119,35 +118,20 @@ Navbar
   .nav-header {
     padding: 0 0;
   }
+  .nav-header{
+    margin-top: -10px
+  }
   .nav-link {
     padding: 0 0;
     margin-right: 0.7rem;
   }
   .nav-link:hover {
     padding: 0;
-    color: var(--clr-primary-5);
-    background: transparent;
+    color: var(--clr-light-gray);
   }
 }
 
 
-
-/* .navbar {
-  position: fixed;
-  width: 100%;
-  font-size: 18px;
-  overflow: hidden !important;
-  z-index: 999;
-  opacity: 0.9;
-}
-.navbar-nav {
-  display: flex !important;
-  flex-direction: row;
-  align-items: flex-end !important;
-}
-.nav-item {
-  margin-right: 20px;
-} */
 
 /* ====================
 Hero
@@ -241,7 +225,7 @@ About Me
 /* ====================
 Project
 ==================== */
-#project h1 {
+#projects h1 {
   color: #0a192f;
   padding-top: 120px;
   text-align: center;
